@@ -1,0 +1,27 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.buttonspacing {
+    margin: 0 5px;
+}
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 20%;
+  }
+
+button{
+    background-color: rgb(65, 172, 65);
+    color:aliceblue;
+    border:none;
+}
+  
