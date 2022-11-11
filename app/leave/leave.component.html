@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Leave Apply</h1>
+<div mat-dialog-content>
+    <form [formGroup]= "productForm">
+        <mat-form-field appearance="outline">
+        <input formControlName="FromDate" matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+             <mat-label>From</mat-label>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+        <input formControlName="ToDate" matInput [matDatepicker]="picker1">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+            <mat-label>To</mat-label>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Reason</mat-label>
+            <input formControlName="reason" matInput placeholder="Ex: Fever">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" class="buttonspacing" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" (click)="applyLeave(); "class="buttonspacing" >Submit</button>
+</div>
